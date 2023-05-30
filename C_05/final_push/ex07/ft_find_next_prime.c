@@ -18,7 +18,7 @@ int	is_divisor(long nb)
 	long	i;
 
 	i = 2;
-	while (i * i <= nb)
+	while (i <= nb / i) //prima era: i * i <= nb, tenere le variabili piu' piccole possibile!
 	{
 		if (nb % i == 0)
 			return (0);
